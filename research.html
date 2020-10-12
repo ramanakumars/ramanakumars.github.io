@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Research projects</title>
+	<meta name="description" content="My personal website">
+	<meta name="author" content="ramanakumar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+	<main id='main'>
+		<div id='header-placeholder'></div>
+		<script>
+			$.get("header.html", function(data){
+					$("#header-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<article id='front'>
+			<section style='width: 100%; display: block;'>
+				<center>
+					<a href="#pubs">Click here for a full list of publications</a>
+				</center>
+			</section>
+			<article id='research_all'>
+				<h1>Research projects</h1>
+				<article id='research_jup' class='research_sect'>
+					<section class="research_media">
+						<video width="100%" controls loop>
+							<source src="media/n2h1-clouds.mp4" type="video/mp4">
+						</video>
+						<p>
+							<center>
+								<i>
+								Simulation output showing the vertically integrated cloud density of ammonia in orange and water in blue. The structure of the jet and upper level waves result in the chevron-shaped ammonia clouds, and also affect the thickness and convective potential of water clouds below.
+								</i>
+							</center>
+						</p>
+					</section>
+
+					<section class="research_text">
+						<h1 class="project_title">Moist convection on Jupiter</h1>
+						<p>
+							I am working on using the EPIC GCM (<a href="http://dx.doi.org/10.1016/j.icarus.2006.01.003">Dowling et al., 2006</a>) to study cloud formation near the 24-degree N jet on Jupiter. Several decades of observation of this region has shown convective storms which disrupt the structure of the jet and also change the chromophoric structure of the nearby zone and belt (see e.g., <a href="https://doi.org/10.1002/2017GL073421">Sánchez-Lavega et al., 2017</a>). These plumes are a result of moist convection due to release of latent heat from water vapor deep in the atmosphere. I am working on adding a moist convective module to EPIC to study the formation of these plumes and understand their dynamics and how they affect the atmosphere.
+						</p>
+						<h2>Conference presentations/abstracts</h2>
+						<ul>
+							<li>EPSC 2020: <a href="https://vimeo.com/457697239">Sankar et al. (2020)</a></li>
+							<li>AGU 2019: <a href="https://doi.org/10.1002/essoar.10501703.1">Sankar et al. (2019)</a></li>
+							<li>DPS 2018: <a href="https://ui.adsabs.harvard.edu/abs/2018DPS....5050308S/abstract">Sankar et al. (2018)</a></li>
+							<li>DPS 2017: <a href="https://ui.adsabs.harvard.edu/abs/2017DPS....4911506F/abstract">Flom et al. (2017)</a></li>
+						</ul>
+								
+					</section>
+				</article>
+				<article id='research_clouds' class='research_sect'>
+					<section class="research_text">
+						<h1 class="project_title">The effect of cloud condensation on Ice Giants</h1>
+						<p>
+							The Great Dark Spot was a large scale optically dark feature observed by <i>Voyager 2</i> in 1989 during its flyby of Neptune. Several bright companion clouds were also observed in the vicinity of the spot and the spot itself drifted equatorward while having a periodic oscillation in shape and size. I helped run simulations using the EPIC GCM with its cloud microphysics module to understand the effect of latent heat release and cloud formation on the dynamical behaviour of the spots. We found that the actively forming clouds changed both the shape oscillation and the drift rate of the vortex, much more so than just adding methane vapor to the atmosphere. 
+						</p>
+						<p>
+							I have also run simulations and helped with analysis of similar features on Uranus. We found that the presence of the vortex leads to orographic upwelling resulting in cloud formation near the vortices. 
+						</p>
+						<h2>Publications</h2>
+						<ul>
+							<li><a href="https://doi.org/10.1093/mnras/staa1799">Hadland et al. (2020)</a> (<a href="https://arxiv.org/abs/2006.12744">ArXiv</a>)</li>
+							<li><a href="https://doi.org/10.3390/atmos11010052">LeBeau et al. (2020)</a></li>
+						</ul>
+						<h2>Conference abstracts</h2>
+						<ul>
+							<li>EPSC 2019: <a href="https://meetingorganizer.copernicus.org/EPSC-DPS2019/EPSC-DPS2019-745-1.pdf">Hadland et al. (2019)</a></li>
+							<li>DPS 2017: <a href="https://ui.adsabs.harvard.edu/abs/2017DPS....4911519B/abstract">Bhure et al. (2017)</a></li>
+						</ul>
+						
+					</section>
+					<section class="research_media">
+						<video width="100%" controls loop>
+							<source src="media/GDS.mp4" type="video/mp4">
+						</video>
+						<p>
+							<center>
+								<i>
+									Vertically integrated methane vapor density (blue) with methane ice clouds (white) from a simulation of the GDS on Neptune using the EPIC model. From <a href="https://meetingorganizer.copernicus.org/EPSC-DPS2019/EPSC-DPS2019-745-1.pdf">Hadland et al. (2019)</a>
+								</i>
+							</center>
+						</p>
+					</section>
+
+				</article>
+				<article id='research_frag' class='research_sect'>
+					<section class="research_media">
+						<video width="100%" controls loop>
+							<source src="media/jovian_impact_frag.mp4" type="video/mp4">
+						</video>
+						<p>
+							<center>
+								<i>
+								Fragmentation model of the Aug 2019 impact on Jupiter showing the observed energy deposition (red) compared to a modelled slow (60km/s) iron-nickel case (black). The thin dashed lines are the contributions from each released fragment.
+								</i>
+							</center>
+						</p>
+					</section>
+					<section class="research_text">
+						<h1 class="project_title">Fragmentation modelling of meteor impacts</h1>
+						<p>
+							On August 19th, 2019, Ethan Chappel <a href="https://www.chappelastro.com/astrophotography/solar_system/jupiter/2019/2019-08-07_04:10:36/">observed</a> an impact flash on Jupiter's SEB with a sufficiently high cadence to produce a lightcurve. We analysed the lightcurve to obtain the energy deposition, but inferring the geometry of the impactor was not possible from a single video source. Therefore, we developed a fragmentation model, based on <a href="http://dx.doi.org/10.1016/j.icarus.2018.06.014">Wheeler et al. (2018)</a> and tested different impact geometries and material composition to determine the most probable case. The fragmentation model showed that the impactor at least as dense as a stony asteroid (~2 g/cc) but could be denser if the velocity was lower (~60 km/s).
+						</p>
+						<p>
+							We are also working on using this model for Earth impactors. On Earth, the trajectory can be determined by triangulating the postion of the bolide from multiple cameras, providing an energy deposition profile as a function of height. Using this information, it is much easier to constrain the material composition of the impactor and its initial mass. 
+						</p>
+						<h2>Publications</h2>
+						<a href="http://dx.doi.org/10.1093/mnras/staa563">Sankar et al. (2020)</a> (<a href="https://arxiv.org/abs/2002.07894">ArXiv</a>) on the Aug 19 jovian impact.
+					</section>
+
+				</article>
+				<article id='research_allsky' class='research_sect'>
+					<section class="research_text">
+						<h1 class="project_title">Meteor trajectories from allsky cameras</h1>
+						<p>
+							The <a href="http://www.goskysentinel.com">Spalding Allsky Camera Network (SACN)</a> is a network for cameras around the world for the purpose of detecting and studying atmospheric impactors. On June 2, 2016, a large fireball was observed over Arizona, and fragments were recovered on the ground from the impact. We used three SACN cameras and one dashcam video to determine the trajectory and pre-atmospheric orbit of the incoming object. Furthermore, using a Multispectral Radiometer (MSR) stationed in Albuquerque, NM, we obtained a high-precision lightcurve of the event and used a fragmentation model to determine the material composition and mass of the impacting object.
+						</p>
+						<p>
+							Currently, I am helping improve this analysis by adding data provided by the Geostationary Lightning Mapper (GLM) aboard the GOES-16 and 17 satellites. These detectors are able to see bolides brighter than magnitude -14, and so serve as another data point in triangulating the positions of these bolides. We are currently testing the feasibility of the trajectory as determined by triangulating the event from the two satellites, compared to using allsky cameras.
+						</p>
+						<h2>Publications</h2>
+						<a href="https://doi.org/10.1093/mnras/stz1424">Palotai et al. (2019)</a> (<a href="https://arxiv.org/abs/1801.05072">ArXiv</a>) on the Jun 2 event
+						<h2>Conference abstracts</h2>
+						EPSC 2020: <a href="https://doi.org/10.5194/epsc2020-467">Hughes et al. (2020)</a>
+					</section>
+					<section class="research_media">
+						<video width="100%" controls loop>
+							<source src="media/node79.mp4" type="video/mp4">
+						</video>
+						<p>
+							<center>
+								<i>
+									Allsky camera video of the June 2, 2016 bolide over Arizona showing the bolide entry and fragmentation. 
+								</i>
+							</center>
+						</p>
+
+					</section>
+				</article>
+			</article>
+
+			<article id="pubs" class="pubs">
+				<section id='paperlist'>
+					<h1>Publications </h1>
+					<ul>
+						<li>Hadland, N., <b>Sankar, R.</b>, LeBeau, J., & Palotai, C. (2020). EPIC simulations of Neptune’s dark spots using an active cloud microphysical model. <i>Monthly Notices of the Royal Astronomical Society, 496(4)</i>, 4760-4768. (DOI: <a href="https://doi.org/10.1093/mnras/staa1799">https://doi.org/10.1093/mnras/staa1799</a>, <a href="https://arxiv.org/abs/2006.12744">ArXiv</a>)</li>
+						<li><b>Sankar, R.</b>, Palotai, C., Hueso, R., Delcroix, M., Chappel, E., & Sánchez-Lavega, A. (2020). Fragmentation modelling of the 2019 August impact on Jupiter. <i>Monthly Notices of the Royal Astronomical Society, 493(4)</i>, 4622-4630. (DOI: <a href="https://doi.org/10.1093/mnras/staa563">10.1093/mnras/staa563</a>, <a href="https://arxiv.org/abs/2002.07894">ArXiv</a>)</li>
+						<li>LeBeau, R., Farmer, K., <b>Sankar, R.</b>, Hadland, N. & Palotai, C. A Numerical Investigation of the Berg Feature on Uranus as a Vortex-Driven System. <i>Atmosphere 11(1)</i>. (DOI: <a href="https://doi.org/10.3390/atmos11010052">10.3390/atmos11010052</a>)</li>
+						<li>Palotai, C., <b>Sankar, R.</b>, Free, D., Howell, J., Botella, E., & Batcheldor, D. (2019). Analysis of the 2016 June 2 bolide event over Arizona. <i>Monthly Notices of the Royal Astronomical Society, 487(2)</i>, 2307-2318. (DOI: <a href="https://doi.org/10.1093/mnras/stz1424">10.1093/mnras/stz1424</a>, <a href="https://arxiv.org/abs/1801.05072">ArXiv</a>)</li>
+					</ul>
+					<h1>Conference abstracts</h1>
+						<ul>
+							<li><b>Sankar, R.</b>, Klare, C., Palotai, C. Moist convection in Jupiter's fastest jet. <i>Europlanet Science Congress 2020, online, 21 September–9 Oct 2020</i>. (2020) (DOI: <a href='https://doi.org/10.5194/epsc2020-469'>10.5194/epsc2020-469</a>)</li>
+							<li><b>Sankar, R.</b>, Klare, C., Palotai, C., Hughes, A. Simulation of Jovian moist convection with an active water and ammonia hydrological cycle using the EPIC GCM. <i>AGU Fall Meeting Abstracts</i>. (2019)</li>
+							<li>Hadland, N., <b>Sankar, R.</b>, Klare, C., Palotai, C., Farmer, K., Lebeau, R. EPIC Modeling of Large Scale Dynamical Features of the Gas Giants. <i>EPSC-DPS Joint Meeting 2019</i>. (2019)</li>
+							<li>Le Beau, R. P., Loiacono, R., Wagner, A., Farmer, K., Palotai, C. J., <b>Sankar, R.</b>, Hadland, N., Nodolski, N. Using Numerical Simulation to Consider the Observed Variations in the Behavior and Appearance of Dark Spots on the Ice Giants. <i>American Astronomical Society Meeting Abstracts #234</i>. (2019)</li>
+							<li>LeBeau, R., Farmer, K., Palotai, C., Hadland, N., <b>Sankar, R.</b>, Nodolski, N. Simulating the Uranian Berg Feature as a Vortex-Driven Cloud. <i>AGU Fall Meeting Abstracts</i>. (2018)</li>
+							<li><b>Sankar, R.</b>, Hadland, N., Klare, C., Flom, A., Nodolski, N., Palotai, C., LeBeau, R., Farmer, K. Simulations of large scale cloud features on Outer Solar System planets. <i>AAS/Division for Planetary Sciences Meeting Abstracts #50</i>. (2018)</li>
+							<li>Le Beau, R. P., Farmer, K., Palotai, C., Hadland, N., <b>Sankar, R.</b>, Nodolski, N. Simulating Drifting Features in the Atmospheres of the Ice Giants. <i>AAS/Division for Planetary Sciences Meeting Abstracts #50</i>. (2018)</li>
+							<li>LeBeau, R., Koutas, N., Palotai, C., Bhure, S., Hadland, N., <b>Sankar, R.</b> Catching the Drift: Simulating Dark Spots and Bright Companions on the Ice Giants. <i>AGU Fall Meeting Abstracts</i>. (2017)</li>
+							<li><b>Sankar, R.</b>, Palotai, C. J. Analysis of cloud microphysical processes on extrasolar giant planet atmospheres. <i>AAS/Division for Planetary Sciences Meeting Abstracts #49</i>. (2017)</li>
+							<li>Bhure, S., <b>Sankar, R.</b>, Hadland, N., Palotai, C. J., Le Beau, R. P., Koutas, N. Studies of Dark Spots and Their Companion Clouds on the Ice Giant Planets. <i>AAS/Division for Planetary Sciences Meeting Abstracts #49</i>. (2017)</li>
+							<li>Palotai, C. J., <b>Sankar, R.</b>, McCabe, T., Korycansky, D. Waves, Plumes and Bubbles from Jupiter Comet Impacts. <i>AAS/Division for Planetary Sciences Meeting Abstracts #49</i>. (2017)</li>
+							<li>Flom, A., <b>Sankar, R.</b>, Palotai, C. J., Dowling, T. E. Studying the Structure of Condensables Jupiter's 24deg Jet. <i>AAS/Division for Planetary Sciences Meeting Abstracts #49</i>. (2017)</li>
+						</ul>
+				</section>
+			</article>
+		</article>
+		<div id='footer-placeholder'></div>
+		<script>
+			$.get("footer.html", function(data){
+					$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+	</main>
+
+</body>
+
+</html>
+

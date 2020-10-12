@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
@@ -7,11 +6,56 @@
 	<title>Ramanakumar Sankar</title>
 	<meta name="description" content="My personal website">
 	<meta name="author" content="ramanakumar">
-	<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 
 <body>
-	&nbsp;
+	<main id='main'>
+		<div id='header-placeholder'></div>
+		<script>
+			$.get("header.html", function(data){
+					$("#header-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<article id='front'>
+			<section id='photo' class='columns'>
+				<img src="img/headerphoto.JPG" alt="Ramanakumar Sankar">
+				<nav id='social_media'> 
+					<a href="https://orcid.org/0000-0002-6794-7587" target="_blank"><img src="img/ORCIDiD_iconbw128x128.png"></a>
+					<a href="https://github.com/ramanakumars" target="_blank"><img src="img/GitHub-Mark-120px-plus.png"></a>
+					<a href="https://twitter.com/ramanakumars" target="_blank"><img src="img/Twitter_Logo_Blue.png"></a>
+				</nav>
+			</section>
+			<section id='aboutme' class='columns'>
+				<h1> About me </h1>
+				<p>
+					I am a Ph.D. student at Florida Institute of Technology in Melbourne, FL. I did my undergraduate at Florida Tech and dual majored in Astronomy & Astrophysics and Mathematical Sciences.
+				</p>
+				<p>
+					For my Ph.D., I study gas giant atmospheres with a focus on cloud formation using of numerical models. The focus of my dissertation work is using the EPIC (Explicit Planetary Isentropic Coordinate) model to study convective water clouds on Jupiter which have been observed to grow into large storm complexes that result in planetary scale disturbances. I am working on adding a sub-grid scale moist convective scheme to the model so as to simulate these storms. This update would prove useful not only in Jovian atmospheric studies but also in other Gas Giants where convective activity has been observed and theorized, and potentially even for exoplanets. 
+				</p>
+				<p>
+					I have also worked on detecting and modeling meteor impacts in planetary atmospheres. I worked with the Spalding Allsky Camera Network (SACN) to triangulate and determine trajectories of fireballs detected using their camera network, and implemented a fragmentation model to determine their physical properties. I applied a similar analysis to a jovian impact in 2019 which had sufficiently high temporal resolution to detect fragmentation peaks in the lightcurve. 
+				</p>
+				<p>
+					My interests are in the study of atmospheric dynamics, and after my Ph.D. I intend to continue working to better understand the processes that drive planetary atmospheres. 
+				</p>
+			</section>
+		</article>
+		<div id='footer-placeholder'></div>
+		<script>
+			$.get("footer.html", function(data){
+					$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+	</main>
+
 </body>
 
 </html>

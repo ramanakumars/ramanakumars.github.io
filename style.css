@@ -1,0 +1,290 @@
+body {
+	margin: 0;
+	font-size: 18px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#main {
+	display: block;
+	width: 80%;
+	max-width: 100%;
+	margin: auto;
+	color: #2A3132;/*#191308;*/
+	margin-top: 0px;
+	font-family: Martel;
+	overflow: hidden;
+}
+
+#main article {
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+#mainheader {
+	display: block;
+	width: 100%;
+	float: left;
+	background-color: #336B87;/*#454B66;*/
+}
+
+#myname {
+	display: block;
+	float: left;
+	width: 45%;
+	padding: 1em;
+	padding-left: 2em;
+	line-height: 1.5em;
+	min-height: 1.5em;
+	/*background-color: #454B66;*/
+	color: white;
+	font-size: 1.5em;
+}
+
+#mainnav{
+	display: block;
+	float: right;
+}
+
+#footer {
+	width: 100%;
+	display: block;
+	background-color: #763626;
+	color: white;
+	padding: 1em 2em;
+	padding-bottom: 0.5em;
+	box-sizing: border-box;
+}
+
+
+#footer h1 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+#footer ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#footer li {
+	line-height: 2em;
+}
+
+#footer a:hover {
+	color: #DC851F;
+}
+#footer a{
+	color: #90AFC5;
+}
+
+.navlink {
+	display: block;
+	float: left;
+	padding: 1em 0.5em;
+	min-width: 2.5em;
+	background-color: #336B87;/*#454B66;*/
+	min-height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	transition: all 0.1s ease-in;
+	text-decoration: none;
+	color: #F4FAFF;
+	font-family: Titillium Web;
+	font-size: 1.5em;
+}
+
+.navlink:hover {
+	background-color: #90AFC5;/*#677DB7;*/
+	transition: all 0.1s ease-in;
+	box-shadow: inset 0 -7px #DC851F;/*#E0FBFC;*/
+}
+
+article#front {
+	padding-top: 1em;
+}
+
+article#front section.columns{
+	margin: 0px;
+	float: left;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 0 0.5em;
+	
+}
+
+#photo {
+	display: block;
+	text-align: center;
+	width: 40%;
+}
+
+#photo img {
+	width: 90%;
+	margin: auto;
+}
+
+#aboutme {
+	width: 60%;
+}
+
+#aboutme h1 {
+	margin: 0px;
+	font-size: 3em;
+	text-align: center;
+}
+
+#aboutme p {
+	text-align: justify;
+}
+
+#social_media {
+	display: block;
+	min-width: 50%;
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+#social_media a{
+	display: inline-block;
+	max-width: 5em;
+	max-height: 5em;
+	padding: 1em;
+}
+
+#social_media a:hover{
+	background-color: #ccc;
+}
+
+#social_media img {
+	max-width: 4em;
+}
+
+
+#cv-header {
+	min-width: 50%;
+	text-align: center;
+}
+
+article a {
+	color: #DA2C38;/*#474BD7;*/
+	text-decoration: none;
+	font-weight: bold;
+}
+
+article a:hover {
+	color: #763626;/*#677DB7;*/
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#cv-header h1 {
+	font-size: 2em;
+	margin: 0.5em;
+}
+
+section.cv-subsec {
+	width: 70%;
+	margin: auto;
+}
+
+section.cv-left{
+	width: 25%;
+	float: left;
+	display: block;
+	text-align: justify;
+}
+section.cv-right{
+	width: 74%;
+	float: left;
+	display: block;
+	text-align: justify;
+}
+
+.pubs h1, #research_all h1 {
+	font-size: 2em;
+	padding: 0.2em;
+	margin: 0.1em 0;
+
+}
+
+article.research_sect {
+	width: 100%;
+	display: block;
+	float: left;
+	margin: auto;
+	border-bottom: 3px solid #191308;
+}
+
+h1.project_title {
+	display: block;
+	text-align: center;
+	font-size: 1.3em !important;
+	padding: 0.8em 0 !important;
+	margin: 0;
+	width: 100%;
+	background-color: #2A3132;/*#677DB7;*/
+	color:white;
+}
+
+section.research_media {
+	width: 50%;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+section.research_text {
+	width: 50%;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+article#research_all {
+	display: block;
+	width: 100%;
+}
+
+article.pubs {
+	display: block;
+	width: 100%;
+}
+
+#paperlist li {
+	padding: 0.5em 0;
+}
+
+
+@media screen and (max-width: 900px) {
+	#main, #mainheader {
+		width: 100%;
+	}
+
+	article#front {
+		padding: 0px;
+		padding-top: 1em;
+	}
+
+	article#front section{
+		width: 100% !important;
+		margin: auto;
+		box-sizing: border-box;
+		padding: 2em !important;
+	}
+
+	#myname {
+		width: 90%;
+		margin: auto;
+		padding: 1em;
+	}
+}
