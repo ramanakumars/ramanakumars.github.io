@@ -264,6 +264,17 @@ article.pubs {
 	padding: 0.5em 0;
 }
 
+section#CVobject {
+	width: 100%;
+	min-height: 600px;
+	text-align: center;
+}
+
+section#CVobject object{
+	width: 80%;
+	height: 100vh;
+}
+
 
 @media screen and (max-width: 900px) {
 	#main, #mainheader {
@@ -286,5 +297,8 @@ article.pubs {
 		width: 90%;
 		margin: auto;
 		padding: 1em;
+	}
+	section#CVobject object{
+		width: 100%;
 	}
 }
