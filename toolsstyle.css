@@ -1,0 +1,12 @@
+#GOES16 {
+	width: 100%; 
+	display: block;
+}
+
+#GOES16 h1 {
+	font-size: 1.4em;
+}
+
+#GOES16 video {
+	max-width: 900px;
+}

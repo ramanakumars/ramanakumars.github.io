@@ -1,0 +1,48 @@
+#photo {
+	display: block;
+	text-align: center;
+	width: 40%;
+}
+
+#photo img {
+	width: 90%;
+	margin: auto;
+}
+
+#aboutme {
+	width: 60%;
+}
+
+#aboutme h1 {
+	margin: 0px;
+	font-size: 3em;
+	text-align: center;
+}
+
+#aboutme p {
+	text-align: justify;
+}
+
+#social_media {
+	display: block;
+	min-width: 50%;
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+#social_media a{
+	display: inline-block;
+	max-width: 5em;
+	max-height: 5em;
+	padding: 1em;
+}
+
+#social_media a:hover{
+	background-color: #ccc;
+}
+
+#social_media img {
+	max-width: 4em;
+}
+

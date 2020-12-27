@@ -1,0 +1,59 @@
+.pubs h1, #research_all h1 {
+	font-size: 2em;
+	padding: 0.2em;
+	margin: 0.1em 0;
+
+}
+
+article.research_sect {
+	width: 100%;
+	display: block;
+	float: left;
+	margin: auto;
+	border-bottom: 3px solid #191308;
+}
+
+h1.project_title {
+	display: block;
+	text-align: center;
+	font-size: 1.3em !important;
+	padding: 0.8em 0 !important;
+	margin: 0;
+	width: 100%;
+	background-color: #2A3132;/*#677DB7;*/
+	color:white;
+}
+
+section.research_media {
+	width: 50%;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+section.research_text {
+	width: 50%;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 1em;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+article#research_all {
+	display: block;
+	width: 100%;
+}
+
+article.pubs {
+	display: block;
+	width: 100%;
+}
+
+#paperlist li {
+	padding: 0.5em 0;
+}
+

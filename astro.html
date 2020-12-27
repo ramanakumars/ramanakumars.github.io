@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Astrophotography</title>
+	<meta name="description" content="My personal website">
+	<meta name="author" content="ramanakumar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="mainstyle.css">
+	<link rel="stylesheet" href="astrostyle.css">
+	<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel">
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="funcs.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<main id='main'>
+		<div id='header-placeholder'></div>
+		<script>
+			$.get("header.html", function(data){
+					$("#header-placeholder").replaceWith(data);
+			});
+		</script>
+
+		<article id='front'>
+			<article id='astro-topnav'>
+				<nav id='astronav'>
+					<a href='javascript:showPlanet("jupiter")' class='astronav'>Jupiter</a>
+					<a href='javascript:showPlanet("mars")' class='astronav'>Mars</a>
+					<a href='javascript:showPlanet("moon")' class='astronav'>Moon</a>
+				</nav>
+			</article>
+
+			<article id='astro-media-wrapper'>
+				<article id='jupiter' class='astro-media-planet-wrapper'>
+					<h1 class='planet-name'>Jupiter</h1>
+					<section id='jupsatconjunction-2020-12-21' class='astro-media-event-wrapper'>
+						<h1>21st Dec 2021 - Jupiter/Saturn conjunction</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/jupiter/jupsat-2020-12-21-21_18_00_58_965.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Taken on the closest approach of the Jupiter/Saturn conjunction in 2020. This was processed directly using a 3000 frame video with an exposure of 0.8ms, and stacking the best 1350 frames. Wavelet processing done using Registax. Titan is barely visible to the lower left of Saturn. Jupiter's moons are Europa, Ganymede, Io and Callisto from bottom to top. 
+						</section>
+					</section>
+					<section id='jupsatconjunction-2020-12-18' class='astro-media-event-wrapper'>
+						<h1>18th Dec 2021 - Jupiter/Saturn conjunction</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/jupiter/JupSat-2020.12.18.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Test run before the Jupiter/Saturn conjunction. This is a mosaic of two separate images of Jupiter/Saturn and realigned onto a wide-field image. Angular distance is correct, but brightness is not. Jupiter was processed using 1350/3000 frames at 2.8ms exposure each, and Saturn was processed using 1200/3000 frames at 7.7ms exposure. Wavelet post-processing done in Registax. The Great Red Spot is visible, and Jupiter's moons are Io, Europa and Ganymede from left to right. 
+						</section>
+					</section>
+					<section id='jupiter-2020-09-04' class='astro-media-event-wrapper'>
+						<h1>4th September 2020 - NTB outbreak</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/jupiter/jup_2020-09-04_20_34_01_884.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Attempt to catch the North Temparate Belt (NTB) outbreak in Sep/Oct 2020. Used 800/2000 frames at 18ms exposure and post-processed in Registax. The outbreak is visible near the eastern limb. Europa and Callisto are visible on the right. 
+						</section>
+					</section>
+					<section id='jupiter-2020-08-26' class='astro-media-event-wrapper'>
+						<h1>26th August 2020</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/jupiter/jup_2020-08-26_20_30_48.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Test using the lucky-imaging method to capture Jupiter near opposition. This image is from the 32-in Ortega telescope at Flrida Tech. This image is stacked from 400/1000 frames at 10ms exposure. 
+						</section>
+					</section>
+				</article>
+
+				<article id='mars' style='display:none;' class='astro-media-planet-wrapper'>
+					<h1 class='planet-name'>Mars</h1>
+					<section id='mars-2020-12-21' class='astro-media-event-wrapper'>
+						<h1>21st December 2020</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/mars/mars_2020-12-21_18_30_37_046.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Mars taken using a 2x Barlow lens on an 8-in telescope. This image is from the best 600 out of 3000 frames at 1.4ms exposure. North is the bottom right and Elysium Planitia is visible. 
+						</section>
+					</section>
+				</article>
+
+				<article id='moon' style='display:none;' class='astro-media-planet-wrapper'>
+					<h1 class='planet-name'>Moon</h1>
+					<section id='moon-2020-12-21' class='astro-media-event-wrapper'>
+						<h1>21st December 2020</h1>
+						<section class='astro-media-img'>
+							<img src='img/astro/moon/moon_2020-12-21_17_54_50_594.png' loading='lazy'>
+						</section>
+						<section class='astro-media-text'>
+							Moon taken using best 65 out of 100 frames at 1.5ms exposure. 
+						</section>
+					</section>
+				</article>
+			</article>
+		</article>
+
+		<div id='footer-placeholder'></div>
+		<script>
+			$.get("footer.html", function(data){
+					$("#footer-placeholder").replaceWith(data);
+			});
+		</script>
+	</main>
+
+</body>
+
+</html>
+
+
