@@ -27,3 +27,19 @@ $(window).resize(function () {
 		$("#mainnav").removeAttr("style");
 	}
 });
+
+function GOESloop() {
+	var GOESloop = document.getElementById('GOES16loop');
+	var GOESimg  = document.getElementById('GOES16img');
+
+	GOESloop.style.display='block';
+	GOESimg.style.display='none';
+}
+
+function GOESimg() {
+	var GOESloop = document.getElementById('GOES16loop');
+	var GOESimg  = document.getElementById('GOES16img');
+
+	GOESimg.style.display='block';
+	GOESloop.style.display='none';
+}

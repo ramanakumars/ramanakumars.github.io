@@ -7,6 +7,21 @@
 	font-size: 1.4em;
 }
 
-#GOES16 video {
+#GOES16-media {
+	padding: 1em 0;
+}
+
+#GOES16-media video {
+	display: none;
 	max-width: 900px;
+}
+
+#GOES16-media img {
+	display: block;
+	max-width: 900px;
+}
+
+#GOES16nav a {
+	min-height: 100px;
+	padding: 0.5em;
 }

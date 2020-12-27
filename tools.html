@@ -30,10 +30,17 @@
 		<article id='front'>
 			<article id='GOES16'>
 				<center>
-					<h1>4-hour Florida GOES-16 loop</h1>
-					<video width="100%" controls loop>
-						<source src='http://192.46.216.249/GOES16.mp4' type='video/mp4'>
-					</video>
+					<h1>Florida GOES-16 loop</h1>
+					<nav id='GOES16nav'>
+						<a href='#' onclick='GOESloop()'>4-hour loop</a>
+						<a href='#' onclick='GOESimg()'>Latest image</a>
+					</nav>
+					<section id='GOES16-media'>
+						<video id='GOES16loop' width="100%" controls loop preload='none'>
+							<source src='http://192.46.216.249/GOES16.mp4' type='video/mp4'>
+						</video>
+						<img id='GOES16img' src='http://192.46.216.249/latest.png' width='100%' loading='lazy'>
+					</section>
 				</center>
 			</article>
 		</article>
