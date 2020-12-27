@@ -14,9 +14,8 @@ function showPlanet(planet) {
 function toggleMenu() {
 	var nav      = document.getElementById('mainnav');
 	var navstyle = getComputedStyle(nav);
-	console.log(navstyle.maxHeight);
 	if(navstyle.maxHeight == '0px') {
-		nav.style.maxHeight = '200%';
+		nav.style.maxHeight = '2000px';
 	} else {
 		nav.style.maxHeight = '0px';
 	}
